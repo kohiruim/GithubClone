@@ -1,0 +1,29 @@
+.header {
+  background-color: #0064ea;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px 35px;
+}
+
+.inner {
+  max-width: 550px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 15px 15px;
+  }
+  .inner {
+    gap: 1px;
+  }
+}
