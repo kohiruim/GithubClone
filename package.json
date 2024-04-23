@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "husky init && npx playwright install",
+    "prepare": "husky && husky install && npx playwright install",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
@@ -17,27 +17,20 @@
     "test:unit": "vitest src/",
     "test:unit:coverage": "vitest --coverage src/",
     "test:e2e": "playwright test",
-    "test:e2e:report": "playwright test --reporter=html && playwright show-report",
-    "pre-commit": "npm run test:e2e",
-    "prepare": "husky"
+    "test:e2e:report": "playwright test --reporter=html && playwright show-report"
   },
   "dependencies": {
-    "@playwright/test": "^1.43.1",
     "@tanstack/react-query": "^5.29.2",
-    "@tanstack/react-router": "^1.27.0",
-    "@tanstack/router-devtools": "^1.27.0",
-    "@tanstack/router-vite-plugin": "^1.26.21",
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^15.0.2",
-    "@testing-library/user-event": "^14.5.2",
-    "@vitest/coverage-v8": "^1.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
     "@tanstack/react-query-devtools": "^5.29.2",
     "@types/react": "^18.2.78",
     "@types/react-dom": "^18.2.22",
+    "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
     "@vitejs/plugin-react": "^4.2.1",
@@ -46,13 +39,17 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "husky": "^9.0.11",
-    "pre-commit": "^1.2.2",
+    "husky": "^8.0.0",
     "prettier": "3.2.5",
     "stylelint": "^16.3.1",
     "stylelint-config-standard": "^36.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vitest": "^1.5.0"
+    "vitest": "^1.5.0",
+    "@playwright/test": "^1.43.1",
+    "@vitest/coverage-v8": "^1.5.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.2",
+    "@testing-library/user-event": "^14.5.2"
   }
 }
