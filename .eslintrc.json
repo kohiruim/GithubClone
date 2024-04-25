@@ -42,7 +42,6 @@
     "no-unused-private-class-members": "error",
     "no-use-before-define": "error",
     "require-atomic-updates": "error",
-    "camelcase": "error",
     "@typescript-eslint/adjacent-overload-signatures": "error",
     "@typescript-eslint/array-type": ["error", { "default": "generic" }],
     "@typescript-eslint/consistent-type-exports": "error",

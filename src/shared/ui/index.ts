@@ -1,1 +1,2 @@
-export {Input} from "./input/input";
+export { Input } from "./input/Input";
+export { Arrow } from "./arrow/Arrow";

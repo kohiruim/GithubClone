@@ -1,0 +1,15 @@
+.item {
+  display: inline;
+  padding: 3px 5px;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+.item:hover {
+  cursor: pointer;
+  color: var(--grey);
+  background-color: rgba(143, 143, 143, 0.1);
+}
+.active {
+  color: white;
+  background-color: var(--blue);
+}

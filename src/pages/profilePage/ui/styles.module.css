@@ -1,0 +1,26 @@
+.main {
+  background-color: var(--main-bg);
+  min-height: calc(100vh - 75px);
+}
+
+.repo {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  min-height: calc(100vh - 75px);
+}
+
+@media (max-width: 760px) {
+  .repo {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .repo {
+    padding: 15px;
+  }
+}

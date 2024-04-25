@@ -8,10 +8,22 @@
 
 :root {
   --main-bg: #f9f9f9;
+  --blue: #0064ea;
+  --grey: #8f8f8f;
+  --white: #fff;
 
   font-family: Inter, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border: none;
+  padding: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }

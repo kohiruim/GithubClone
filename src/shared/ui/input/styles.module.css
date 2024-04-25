@@ -12,3 +12,15 @@
 input:focus {
   outline: none;
 }
+
+.serchIcon {
+  width: 15px;
+  position: relative;
+  left: 30px;
+}
+
+@media (max-width: 370px) {
+  .input {
+    width: 92%;
+  }
+}

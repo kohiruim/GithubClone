@@ -19,5 +19,5 @@ export const resultViewMapper: InnerResultType = {
   emptyRepo: {
     icon: <img className={styles.icon} src={EmptyIcon} alt="search" />,
     text: "Repository list is empty",
-  }
+  },
 };
