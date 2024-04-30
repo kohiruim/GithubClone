@@ -1,10 +1,10 @@
 .icon {
-    width: 90px;
-    margin-bottom: 30px;
+  width: 90px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 450px) {
-    .icon {
-      width: 60px;
-    }
+  .icon {
+    width: 60px;
   }
+}

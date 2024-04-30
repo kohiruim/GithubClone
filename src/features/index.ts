@@ -1,1 +1,2 @@
-export { SearchForm } from "./search";
+export { SearchForm } from "./searchForm";
+export { Pagination } from "./pagination";

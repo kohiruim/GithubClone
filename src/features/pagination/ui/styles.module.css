@@ -1,0 +1,39 @@
+.pagination {
+  color: var(--grey);
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 10px;
+}
+.countItemsInfo {
+  display: inline;
+}
+
+.list {
+  display: inline;
+  list-style: none;
+}
+
+.arrow {
+  color: var(--grey);
+  font-weight: 800;
+  margin: 0 5px;
+  vertical-align: top;
+}
+
+.arrow:not([disabled]):hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .pagination {
+    text-align: center;
+  }
+  .countItemsInfo {
+    margin-bottom: 10px;
+  }
+  .countItemsInfo,
+  .list {
+    display: block;
+  }
+}

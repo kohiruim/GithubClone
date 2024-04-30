@@ -1,0 +1,68 @@
+.profileInfo {
+  max-width: 280px;
+  width: 100%;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 25px;
+}
+
+.login {
+  color: var(--blue);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nameContainer {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.follow {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.followers,
+.following {
+  display: inline;
+  margin-left: 10px;
+}
+
+@media (max-width: 850px) {
+  .follow {
+    display: grid;
+  }
+}
+
+@media (max-width: 760px) {
+  .profileInfo {
+    max-width: 700px;
+  }
+  .description {
+    display: flex;
+  }
+  .nameContainer {
+    display: block;
+    margin: auto 0;
+    width: 300px;
+  }
+  .avatar {
+    width: 20vw;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .name {
+    font-size: 20px;
+  }
+}
